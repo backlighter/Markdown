@@ -53,3 +53,45 @@ https://zhuanlan.zhihu.com/p/672965170
 ```
 μ和Σ是从那71个宝可梦的分布中得到的结果。最终得到fμ,Σ 的分布
 ```
+在低维空间看是重叠在一起，但是在高维也许就是可以分开的。
+
+举个例子：一堆粒子，在3D中沿着Z轴，Z>0.5为一类，Z<0.5为一类。
+但是这个3D粒子团，沿着Z轴压缩，为一张2D的图，(如下图所示)，很有可能就是重叠在一起的。但是实际上这些例子在高维空间中是存在分割面的。
+
+![alt text](image-11.png)
+
+## 深度学习基本概念
+![alt text](image-12.png)
+![alt text](image-13.png)
+![alt text](image-15.png)
+![alt text](image-14.png)
+```
+b表示constant 
+```
+
+![alt text](image-16.png)
+
+
+![alt text](image-17.png)
+
+![alt text](image-18.png)
+![alt text](image-19.png)
+
+![alt text](image-20.png)
+
+![alt text](image-22.png)
+
+```
+把W的每一个row或者每一个column都拿出来，拼成一个很长的向量。
+b拼上来，c拼上来，等等。这个长的向量 我们使用一个符号叫做θ来把他表示。
+θ1，θ2，θ3，θ4这些参数来自于所有未知的参数。
+```
+![alt text](image-23.png)
+
+![alt text](image-24.png)
+```
+计算对L的微分 ，组成一个微分的向量,这个向量就是gradient
+```
+
+![alt text](image-25.png)
+上图 Θ 代表Learning Rate
