@@ -56,3 +56,24 @@ nn.Linear(in_features,out_features)
 ![alt text](image-2.png)
 
 ![alt text](image-3.png)
+## torch.optim
+```
+optimizer = torch.optim.SGD(model.parameters(),lr,momentum=0)
+For every batch of data:
+1.Call optimizer.zero_grad() to reset gradients of model parameters.
+2.Call loss.backward()to backpropagate gradients of prediction loss
+3.Call optimizer.step() to adjust model parameters.
+```
+```
+for epoch in range(n_epochs):
+    model.train()
+    for x,y in tr_set:
+        optimizer.zero_grad()
+        x,y=x.to(device),y.to(device)
+        pred=model(x)
+        loss=criterion(pred,y)
+        loss.backward()
+        optimizer.step()
+```
+## Model Load和Save
+![alt text](image-4.png)
