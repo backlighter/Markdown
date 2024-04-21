@@ -27,7 +27,7 @@ Weigted sum的方式来做convolution,这似乎就不是那么容易。我们该
  ```
  https://www.dgl.ai/ Deep Graph Libray
 ```
-
+时域卷积 等于 频域乘积
 
 
 
