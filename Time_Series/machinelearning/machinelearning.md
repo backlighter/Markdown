@@ -1,7 +1,7 @@
 ## 
 ## ACF
 
-![alt text](image.png)
+![alt text](Time_Series/machinelearning/image.png)
 
 **Code**
 ```
@@ -29,30 +29,30 @@ rho_1
 
 
 ## 异常检测
-![alt text](image-1.png)
+![alt text](Time_Series/machinelearning/image-1.png)
 箱线图 正常值要比正态分布要范围要小一些。
 
 
 ## 相关系数
-![alt text](image-2.png)
+![alt text](Time_Series/machinelearning/image-2.png)
 
 只研究线性相关，不一定代表没有相关性！
 
 ## 平稳时间序列 非平稳的时间序列
-![alt text](image-3.png)
+![alt text](Time_Series/machinelearning/image-3.png)
 
 ```
 如果一个随机过程是平稳的，那么他的时间序列也是平稳的
 
 ```
-![alt text](image-4.png)
+![alt text](Time_Series/machinelearning/image-4.png)
 
-![alt text](image-5.png)
+![alt text](Time_Series/machinelearning/image-5.png)
 **协方差平稳 代表着方差平稳**
 
-![alt text](image-6.png)
+![alt text](Time_Series/machinelearning/image-6.png)
 
-![alt text](image-7.png)
+![alt text](Time_Series/machinelearning/image-7.png)
 ```
 自相关函数和偏自相关函数
 1、自相关函数得到的是y1和y3之间复杂的相关性，之中可能包含y2与y3之间的相关性
@@ -67,14 +67,14 @@ X1          X2            X3           X4
    (X3-X2)-(X2-X1)   (X4-X3)-(X3-X2)  
 
 
-![alt text](image-8.png)
+![alt text](Time_Series/machinelearning/image-8.png)
 延迟算子
 
-![alt text](image-9.png)
+![alt text](Time_Series/machinelearning/image-9.png)
 
-![alt text](image-10.png)
+![alt text](Time_Series/machinelearning/image-10.png)
 
 ## MA主要看的是历史白噪声
-![alt text](image-11.png)
+![alt text](Time_Series/machinelearning/image-11.png)
 
-![alt text](image-12.png)
+![alt text](Time_Series/machinelearning/image-12.png)
