@@ -31,3 +31,22 @@ diff : Multi-class Classification
 ![alt text](image-9.png)
 **Positional Encoding**
 
+ # Decoder
+ ## Autoregressive Decoder
+```
+One-Hot-Vector
+```
+![alt text](image-13.png)
+![alt text](image-14.png)
+
+![alt text](image-15.png)
+![alt text](image-16.png)
+
+![alt text](image-17.png)
+![alt text](image-19.png)
+
+![alt text](image-24.png)
+![alt text](image-25.png)
+![alt text](image-26.png)
+
+![alt text](image-27.png)
