@@ -67,3 +67,9 @@ https://www.youtube.com/watch?v=JZvEzb5PV3U
 
 ![alt text](image-16.png)
 
+## 传统Auto-encoder是把最后一个时刻的embedding传入进去
+![alt text](image-73.png)
++ 但是 只传入最后一个时刻的embedding其实信息是不是很好的
++ 比如，我翻译Hello 这时候是不需要用到整条句子的信息
+hello world的，
++ 我要根据我目前这个时刻要翻译对象去选择，而不是最后一个时刻 综合了前面所有的embedding去选择，

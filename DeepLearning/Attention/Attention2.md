@@ -128,3 +128,56 @@ https://www.bilibili.com/video/BV1TZ421j7Ke/?spm_id_from=333.788.recommend_more_
 ![alt text](image-76.png)
 + 在线性代数中，这种操作的实质就是，对大矩阵进行[低秩分解]  LoRA??
 ![alt text](image-77.png)
++ GPT3的一个注意力头 就包含约630万个参数
+
+## Self-attention和Cross-attention
+![alt text](image-78.png)
+# Cross-attention
+## Cross-attention的模型 会处理两种不同类型的数据
++ 比如 **1、原文**和 **2、正在被翻译出来的译文**
++ 或者是 **语音音频** 与 **正在被转录出来的文字**
+## Cross-attention和self-attention几乎相同
++ 唯一的区别是 key 和 query的矩阵作用于不同的数据集
++ 在文本翻译类的任务中，key来自一种语言，value来自另一种语言
+![alt text](image-79.png)
+![alt text](image-80.png)
++ 一种语言中的哪些词，对应另一种语言中的哪些词
++ 这种情况下，通常不会使用掩码，因为不存在，后面token影响前面token的问题
+## 多头注意力
+![alt text](image-81.png)
++ 这意味着有96个不同的W_q和W_k
++ 产生96种不同的注意力模式
++ 每个注意力头 都有独特的值矩阵
+![alt text](image-82.png)
+![alt text](image-83.png)
++ 用来产生96个值向量序列
++ 也就是说，对于上下文中的每个位置，也就是每个token,
+每个头都会给出一个要加入该位置的变化量，
++ 你要做的就是，把每个头给出的变化量加起来
+![alt text](image-84.png)
+![alt text](image-85.png)
+
+![alt text](image-86.png)
++ 通过这个模块，可以得到一个更精确的嵌入
++ 根据多头注意力，模型能学习到根据上下文来改变语义的多种方式。
+![alt text](image-88.png)
+### W_v的具体实现有所不同
+![alt text](image-89.png)
+![alt text](image-90.png)
+
++ 单个注意力头的值矩阵 单指 (将嵌入向量投影到低维空间的【值↓矩阵】)
+![alt text](image-91.png)
+![alt text](image-92.png)
+![alt text](image-94.png)
+
+![alt text](image-95.png)
+![alt text](image-96.png)
+![alt text](image-97.png)
+# More
+```
+https://transformer-circuits.pub/2021/framework/index.html
+```
+![alt text](image-98.png)
+![alt text](image-99.png)
+
+# More

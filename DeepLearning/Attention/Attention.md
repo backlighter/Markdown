@@ -81,6 +81,7 @@
 + 因为e_i是一个高维的向量，所以说矩阵相乘的时候就有可能 辨识出来？？
 + 可是计算相乘之前是不乘以W的呀
 + sin cos 产生的。 positional encoding也是可以学出来的
++ 
 
 ## Truncated Self-attention
 ![alt text](image-25.png)
